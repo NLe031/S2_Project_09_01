@@ -20,6 +20,9 @@
     <title>CGIP Registration Form</title>
     <link href="cg_base.css" rel="stylesheet" />
     <link href="cg_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="cg_forms.css">
+    <link rel="stylesheet" href="cg_validate.css">
+    <script src="cg_script.js"></script>
 </head>
 
 <body>
@@ -51,7 +54,16 @@
     <section>
         <h1>Conference Registration Form</h1>
         <p>Required Item (*)</p>
+        <form action="https://www.example.com/cg/register" method="POST">
+            <label for="titlebox">Title</label>
+            <input name="title" id="titlebox" type="text">
 
+            <label for="fnBox">First Name*</label>
+            <input name="FirstName" id="fnBox" type="text" required />
+
+            <label for="lnBox">Last Name*</label>
+            <input type="text" required>
+        </form>
     </section>
 
     <aside>
