@@ -54,9 +54,11 @@
     <section>
         <h1>Conference Registration Form</h1>
         <p>Required Item (*)</p>
+        <!-- This form is the registration form, it has a label and input element. -->
         <form action="https://www.example.com/cg/register" method="POST">
             <label for="titlebox">Title</label>
             <input name="title" id="titlebox" type="text" list="titlelist" />
+            <!-- The datalist adds options to be chosen by the user. -->
             <datalist id="titlelist">
                 <option value="Mr." />
                 <option value="Mrs." />
@@ -88,18 +90,19 @@
 
             <label for="idBox">ACGPI Membership Number</label>
             <input type="text" name="acgipID" id="idBox" placeholder="acgip-nnnnnn" pattern="^acgip\-\d{6}$">
-            <p><button>Continue</button></p>
+            <p><input type="submit" name="submit" id="submit" value="Continue"></p>
         </form>
     </section>
 
     <aside>
+        <!-- This adds a registration option on the side of the form. -->
         <label for="reglist">Registration Category</label>
         <select name="reglist" id="reglist">
-            <option value="ACGIP Member ($695)">ACGIP Member ($695)</option>
-            <option value="Non-Member ($795)">Non-Member ($795)</option>
-            <option value="Student ($310)">Student ($310)</option>
-            <option value="Poster ($95)">Poster ($95)</option>
-            <option value="Guest ($35)">Guest ($35)</option>
+            <option value="Member ">ACGIP Member ($695)</option>
+            <option value="Non-Member ">Non-Member ($795)</option>
+            <option value="Student ">Student ($310)</option>
+            <option value="Poster ">Poster ($95)</option>
+            <option value="Guest ">Guest ($35)</option>
         </select>
 
     </aside>
