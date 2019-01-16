@@ -58,13 +58,13 @@
             <label for="titlebox">Title</label>
             <input name="title" id="titlebox" type="text" list="titlelist" />
             <datalist id="titlelist">
-                <option value="Mr.">
-                <option value="Mrs.">
-                <option value="Ms.">
-                <option value="Prof.">
-                <option value="Dr.">
-                <option value="Assist. Prof.">
-                <option value="Assoc. Prof.">
+                <option value="Mr." />
+                <option value="Mrs." />
+                <option value="Ms." />
+                <option value="Prof." />
+                <option value="Dr." />
+                <option value="Assist. Prof." />
+                <option value="Assoc. Prof." />
 
             </datalist>
 
@@ -88,23 +88,20 @@
 
             <label for="idBox">ACGPI Membership Number</label>
             <input type="text" name="acgipID" id="idBox" placeholder="acgip-nnnnnn" pattern="^acgip\-\d{6}$">
+            <p><button>Continue</button></p>
         </form>
     </section>
 
     <aside>
-        <dl>
-            <dt>ACGIP Member ($695)</dt>
-            <dd>Eligible to attend all sessions and banquet</dd>
-            <dt>Non-Member ($795)</dt>
-            <dd>Eligible to attend all sessions and banquet</dd>
-            <dt>Student ($310)</dt>
-            <dd>Eligible to attend all sessions. <a href="#">Proof</a> of
-                student status required</dd>
-            <dt>Poster ($95)</dt>
-            <dd>Eligible to attend display hall and vendor stations</dd>
-            <dt>Guest ($35)</dt>
-            <dd>Eligible to attend banquet only</dd>
-        </dl>
+        <label for="reglist">Registration Category</label>
+        <select name="reglist" id="reglist">
+            <option value="ACGIP Member ($695)">ACGIP Member ($695)</option>
+            <option value="Non-Member ($795)">Non-Member ($795)</option>
+            <option value="Student ($310)">Student ($310)</option>
+            <option value="Poster ($95)">Poster ($95)</option>
+            <option value="Guest ($35)">Guest ($35)</option>
+        </select>
+
     </aside>
 
     <footer>
